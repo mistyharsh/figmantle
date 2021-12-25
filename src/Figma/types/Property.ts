@@ -25,6 +25,19 @@ export type VectorDim = {
 };
 
 
+export enum LayoutMode {
+  None = 'NONE',
+  Horizontal = 'HORIZONTAL',
+  Vertical = 'VERTICAL'
+}
+
+
+export enum AxisSizingMode {
+  FIXED = 'FIXED',
+  AUTO = 'AUTO'
+}
+
+
 export enum EasingType {
   EASE_IN = 'EASE_IN',
   EASE_OUT = 'EASE_OUT',
@@ -73,14 +86,28 @@ export type StylesMap = {
 // TODO: Incomplete
 export interface Paint {
   type: PaintType;
-  blendMode: BlendMode;
+  visible?: boolean;
+  opacity?: number;
   color: Color;
+  blendMode: BlendMode;
 }
 
 
 // TODO: Incomplete
 export interface Effect {
   type: EffectType;
+}
+
+
+export interface LayoutGrid {
+  pattern: LayoutGridPattern;
+  sectionSize: number;
+  visible: boolean;
+  color: Color;
+  alignment: LayoutGridAlignment;
+  gutterSize: number;
+  offset: number;
+  count: number;
 }
 
 
@@ -200,4 +227,16 @@ export enum LayoutAlign {
 export enum PathWindingRule {
   EVENODD = 'EVENODD',
   NONZERO = 'NONZERO'
+}
+
+export enum LayoutGridPattern {
+  COLUMNS = 'COLUMNS',
+  ROWS = 'ROWS',
+  GRID = 'GRID'
+}
+
+export enum LayoutGridAlignment {
+  MIN = 'MIN',
+  MAX = 'MAX',
+  CENTER = 'CENTER'
 }
