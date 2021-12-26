@@ -1,6 +1,13 @@
-import { Vector } from '../types/Node';
+import { Vector } from '../Figma/types/Node';
 
-import { BlendMode, LayoutConstraintHorizontal, LayoutConstraintVertical, PaintType, PathWindingRule, StrokeAlign } from '../types/Property';
+import {
+  BlendMode,
+  LayoutConstraintHorizontal,
+  LayoutConstraintVertical,
+  PaintType,
+  PathWindingRule,
+  StrokeAlign
+} from '../Figma/types/Property';
 
 
 export const vector1: Vector = {

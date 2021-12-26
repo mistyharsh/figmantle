@@ -1,5 +1,5 @@
-import { Component } from '../types/Node';
-import { BlendMode, LayoutConstraintHorizontal, LayoutConstraintVertical, PaintType, PathWindingRule, StrokeAlign } from '../types/Property';
+import { Component } from '../Figma/types/Node';
+import { BlendMode, LayoutConstraintHorizontal, LayoutConstraintVertical, PaintType, PathWindingRule, StrokeAlign } from '../Figma/types/Property';
 
 
 export const component1: Component = {
