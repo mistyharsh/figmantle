@@ -19,9 +19,9 @@ export interface Rectangle {
 }
 
 
-export type VectorDim = {
-  x: number,
-  y: number,
+export interface Vector2D {
+  x: number;
+  y: number;
 };
 
 
@@ -83,14 +83,52 @@ export type StylesMap = {
 };
 
 
-// TODO: Incomplete
-export interface Paint {
-  type: PaintType;
+// Paint is of three types
+// https://www.figma.com/plugin-docs/api/Paint/
+
+export interface ColorStop {
+  position: number;
+  color: Color;
+}
+
+export interface BasePaint {
   visible?: boolean;
   opacity?: number;
-  color: Color;
-  blendMode: BlendMode;
+  blendMode?: BlendMode;
 }
+
+export interface SolidPaint extends BasePaint {
+  type: PaintType.SOLID;
+  color: Color;
+}
+
+
+export interface GradientPaint extends BasePaint {
+  type:
+    | PaintType.GRADIENT_ANGULAR | PaintType.GRADIENT_DIAMOND
+    | PaintType.GRADIENT_LINEAR | PaintType.GRADIENT_RADIAL;
+
+  gradientHandlePositions: Vector2D[];
+  gradientStops: ColorStop[];
+}
+
+
+export interface ImagePaint extends BasePaint {
+  type: PaintType.IMAGE;
+  scaleMode: PaintSolidScaleMode;
+
+  imageRef: string;
+  gifRef: string;
+
+  imageTransform?: Transform;
+  scalingFactor?: number;
+
+  // Image rotation, in degrees.
+  rotation: number;
+};
+
+
+export type Paint = SolidPaint | GradientPaint | ImagePaint;
 
 
 // TODO: Incomplete
@@ -111,6 +149,14 @@ export interface LayoutGrid {
 }
 
 
+export enum PaintSolidScaleMode {
+  FILL = 'FILL',
+  FIT = 'FIT',
+  TILE = 'TILE',
+  STRETCH = 'STRETCH',
+}
+
+
 export enum EffectType {
   INNER_SHADOW = 'INNER_SHADOW',
   DROP_SHADOW = 'DROP_SHADOW',
@@ -126,6 +172,8 @@ export enum PaintType {
   GRADIENT_ANGULAR = 'GRADIENT_ANGULAR',
   GRADIENT_DIAMOND = 'GRADIENT_DIAMOND',
   IMAGE = 'IMAGE',
+
+  // TODO: not found any documentation for this
   EMOJI = 'EMOJI'
 }
 

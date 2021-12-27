@@ -1,25 +1,25 @@
 {
-  "id": "26:539",
+  "id": "2:3",
   "name": ".Google",
   "type": "COMPONENT",
   "blendMode": "PASS_THROUGH",
   "children": [
     {
-      "id": "23:645",
+      "id": "2:4",
       "name": "Group",
       "type": "GROUP",
       "blendMode": "PASS_THROUGH",
       "children": [
         {
-          "id": "23:646",
+          "id": "2:5",
           "name": "Vector",
           "type": "VECTOR",
           "blendMode": "PASS_THROUGH",
           "absoluteBoundingBox": {
-            "x": 2031.0559082031250,
-            "y": -44.400001525878906,
-            "width": 50.6159667968750,
-            "height": 25.992000579833984
+            "x": 26.055976867675781,
+            "y": -102.40000152587891,
+            "width": 50.616004943847656,
+            "height": 25.991996765136719
           },
           "constraints": {
             "vertical": "SCALE",
@@ -66,14 +66,14 @@
           "effects": []
         },
         {
-          "id": "23:647",
+          "id": "2:6",
           "name": "Vector",
           "type": "VECTOR",
           "blendMode": "PASS_THROUGH",
           "absoluteBoundingBox": {
-            "x": 2060.0,
-            "y": -17.904027938842773,
-            "width": 31.104003906250,
+            "x": 55.0,
+            "y": -75.904029846191406,
+            "width": 31.103996276855469,
             "height": 30.456001281738281
           },
           "constraints": {
@@ -121,15 +121,15 @@
           "effects": []
         },
         {
-          "id": "23:648",
+          "id": "2:7",
           "name": "Vector",
           "type": "VECTOR",
           "blendMode": "PASS_THROUGH",
           "absoluteBoundingBox": {
-            "x": 2027.5999755859375,
-            "y": -26.544017791748047,
-            "width": 13.9680175781250,
-            "height": 29.087995529174805
+            "x": 22.599996566772461,
+            "y": -84.544021606445312,
+            "width": 13.968000411987305,
+            "height": 29.087997436523438
           },
           "constraints": {
             "vertical": "SCALE",
@@ -176,14 +176,14 @@
           "effects": []
         },
         {
-          "id": "23:649",
+          "id": "2:8",
           "name": "Vector",
           "type": "VECTOR",
           "blendMode": "PASS_THROUGH",
           "absoluteBoundingBox": {
-            "x": 2031.0919189453125,
-            "y": -5.5920104980468750,
-            "width": 50.36389160156250,
+            "x": 26.091999053955078,
+            "y": -63.592010498046875,
+            "width": 50.363994598388672,
             "height": 25.992004394531250
           },
           "constraints": {
@@ -231,14 +231,14 @@
           "effects": []
         },
         {
-          "id": "23:650",
+          "id": "2:9",
           "name": "Vector",
           "type": "VECTOR",
           "blendMode": "PASS_THROUGH",
           "absoluteBoundingBox": {
-            "x": 2027.5999755859375,
-            "y": -44.400001525878906,
-            "width": 64.79992675781250,
+            "x": 22.599996566772461,
+            "y": -102.40000152587891,
+            "width": 64.799995422363281,
             "height": 64.799995422363281
           },
           "constraints": {
@@ -271,9 +271,9 @@
         }
       ],
       "absoluteBoundingBox": {
-        "x": 2027.5999755859375,
-        "y": -44.400001525878906,
-        "width": 64.79992675781250,
+        "x": 22.599996566772461,
+        "y": -102.40000152587891,
+        "width": 64.799995422363281,
         "height": 64.799995422363281
       },
       "preserveRatio": true,
@@ -313,8 +313,8 @@
     }
   ],
   "absoluteBoundingBox": {
-    "x": 2024.0,
-    "y": -48.0,
+    "x": 19.0,
+    "y": -106.0,
     "width": 72.0,
     "height": 72.0
   },
@@ -327,12 +327,12 @@
     [
       1.0,
       0.0,
-      2024.0
+      19.0
     ],
     [
       0.0,
       1.0,
-      -48.0
+      -106.0
     ]
   ],
   "size": {

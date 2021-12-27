@@ -1,4 +1,4 @@
 
 export function precise(x: number, precision = 3) {
-  return x.toPrecision(precision);
+  return Number(x.toPrecision(precision));
 }

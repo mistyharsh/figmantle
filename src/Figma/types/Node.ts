@@ -13,7 +13,7 @@ import {
   Transform,
   Paint,
   Effect,
-  VectorDim,
+  Vector2D,
   LayoutMode,
   AxisSizingMode,
   LayoutGrid
@@ -61,7 +61,7 @@ export interface Vector extends BaseNode {
   transitionEasing?: EasingType | null;
   opacity?: number;
   absoluteBoundingBox: Rectangle;
-  size?: VectorDim;
+  size?: Vector2D;
   relativeTransform?: Transform;
   effects?: Effect[];
   isMask?: boolean;
@@ -102,7 +102,7 @@ export interface Frame extends BaseNode {
   transitionEasing?: EasingType|null;
   opacity?: number;
   absoluteBoundingBox: Rectangle;
-  size?: VectorDim;
+  size?: Vector2D;
   relativeTransform?: Transform;
   clipsContent: boolean;
   layoutMode?: LayoutMode;

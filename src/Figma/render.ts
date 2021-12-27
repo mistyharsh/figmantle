@@ -54,6 +54,8 @@ export function renderComponent(data: Component) {
   if (data.size) {
     svg.width(precise(data.size.x));
     svg.height(precise(data.size.y));
+
+    svg.viewbox(0, 0, precise(data.size.x), precise(data.size.y));
   }
 
   data.children.forEach((c) => renderNode(c, svg));
