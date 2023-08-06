@@ -1,3 +1,3 @@
 # mettle
 
-Personal code samples for tutorials and articles
+Personal code samples for tutorials and articles.

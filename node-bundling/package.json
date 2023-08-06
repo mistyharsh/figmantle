@@ -1,12 +1,29 @@
 {
   "name": "bundling",
   "version": "1.0.0",
+  "type": "module",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "npm run build:webpack && npm run build:esbuild && npm run build:rollup",
+    "build:esbuild": "node ./esbuild.js",
+    "build:webpack": "webpack --config webpack.config.js",
+    "build:rollup": "rollup --config rollup.config.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@bundle/dep-cjs": "file:bundle-dep-cjs-1.0.0.tgz",
+    "@bundle/dep-esm": "file:bundle-dep-esm-1.0.0.tgz"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.3",
+    "@rollup/plugin-node-resolve": "^15.1.0",
+    "esbuild": "^0.18.18",
+    "rollup": "^3.27.2",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  }
 }
